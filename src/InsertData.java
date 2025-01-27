@@ -10,7 +10,11 @@ public class InsertData {
             String userName = "root";
             String password = "root";
             String url = "jdbc:mysql://localhost:3306/ksr";
-            String query = "insert into student (id,stuname,email) values (2,'siva','siva123@gmail.com')";
+
+            int ids = 3;
+            String name = "Ram";
+            String email = "ram123@gmail.com";
+            String query = "insert into student (id,stuname,email) values (3,  \"+name+\",  \"+email+\")";
 
 
             Connection con = DriverManager.getConnection(url, userName, password);
